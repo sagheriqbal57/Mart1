@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context=".CartActivity"
+
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/minus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Enter You'r Jazzcash Number"
+        android:textColor="@color/main"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/numberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="e.g +923233596534"
+
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/payBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="20dp"
+
+        android:text="Pay" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="20dp"
+
+        android:layout_gravity="center_horizontal"
+        android:text="Cancel" />
+</LinearLayout>
