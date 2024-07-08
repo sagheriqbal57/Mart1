@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher3_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EMart"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+        <activity
+            android:name=".dashactivity.Cosmetics"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.More"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.SeeAll"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.Tools"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.Electronics"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.Cloth"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.AllProducts"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.TestPayment"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.PaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.JCPayment"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.AllProducts"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.Signup"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.Login"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashactivity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

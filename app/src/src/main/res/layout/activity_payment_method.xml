@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashactivity.PaymentMethod">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/top_shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Payment Method"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout24"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Choose Payment Method"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        <LinearLayout
+            android:id="@+id/creditlayout"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/payment_selection"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background">
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/card" />
+
+            <TextView
+                android:id="@+id/credit_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Credit Card"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/visa" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/mastercard" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/easypaisalayout"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/payment_selection"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background">
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                android:src="@drawable/wallet" />
+
+            <TextView
+                android:id="@+id/easy_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="30dp"
+                android:text="EasyPaisa"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/easypaisa" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jazzcashlayout"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/payment_selection"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background">
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="57dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                android:src="@drawable/wallet" />
+
+            <TextView
+                android:id="@+id/jazz_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="30dp"
+                android:text="JazzCash"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/jazz" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cash"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/payment_selection"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background">
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/money" />
+
+            <TextView
+                android:id="@+id/cash_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Cash On Delivery"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cash_hand" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="#ABABAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Total Payment" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="0"
+                android:textColor="@color/black"
+                android:text="Rs." />
+
+            <TextView
+                android:id="@+id/totalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="TextView" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirmBtn"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/main"
+            android:text="Confirm"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
